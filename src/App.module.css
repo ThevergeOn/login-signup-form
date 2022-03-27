@@ -1,0 +1,9 @@
+.wrapper {
+  width: 45%;
+  padding: 25px;
+  border: solid rgb(182, 180, 180);
+  border-width: 25px 15px;
+  border: 20px solid gray;
+  margin: 30px auto;
+  background-color: #2C272E;
+}

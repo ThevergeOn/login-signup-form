@@ -1,0 +1,33 @@
+.header{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+}
+/* .header button{
+
+} */
+
+.header button {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background-color: #019267;
+   border:none;
+  outline:none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.26);
+  cursor: pointer;
+
+}
+
+.header button:focus {
+  outline: none;
+}
+
+.header button:hover,
+.header button:active {
+  background: #19af82;
+  border-color:#19af82;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.26);
+}
