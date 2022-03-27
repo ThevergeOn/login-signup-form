@@ -1,20 +1,18 @@
-import React, { useRef } from "react";
+import React, { useRef,useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Button from "../UI/Button";
 import style from "./login.module.css";
 import PasswordInput from "../UI/PasswordInput";
+import validator from "validator";
 const Login = (props) => {
-  const handelClick = (event) => {
-    if (emailRef.current.value.length > 0) {
-      return alert("شما با موفقيت وارد شديد");
-    } else {
-      alert("Invalid data");
-    }
-  };
+   const handelClick = () => {
+     alert("ثبت نام موفقيت آميز بود");
+   };
   let emailRef = useRef();
+  let submitRef=useRef();
   return (
-    <form className={style.form}>
+    <form className={style.form} onSubmit={handelClick}>
       <h1>خوش آمديد</h1>
       <div>
         <input
@@ -28,7 +26,7 @@ const Login = (props) => {
       <div>
         <span className={style.divspan}>فراموش كرديد؟</span>
       </div>
-      <Button onClick={handelClick}>ورود</Button>
+      <Button refs={submitRef}>ورود</Button>
     </form>
   );
 };

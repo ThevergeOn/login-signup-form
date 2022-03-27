@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Button.module.css";
 const Button = (props) => {
   return (
-    <button type="submit" className={styles.button} onClick={props.onClick}>
+    <button ref={props.refs} type="submit" className={styles.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
